@@ -20,6 +20,7 @@ There are 2 Maven projects in this repo:
   * POST to "localhost:8082/file/post". Consumes multipart/form-data. Expects 1 form parameter named "file", payload should be a file
   * PUT to "localhost:8082/file/put". Consumes multipart/form-data. Expects 1 form parameter named "file", payload should be a file
   * GET to "localhost:8082/file/put". Returns a String, is just used to demonstrate that the service is running. 
+* THe service will print all request payloads to console
 
 ### Test POST and PUT functionality with cURL
 
