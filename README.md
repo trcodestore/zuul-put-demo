@@ -11,11 +11,11 @@ There are 2 Maven projects in this repo:
 * java -jar target/gateway-0.0.1-SNAPSHOT.jar
 * Zuul will run on localhost:8081 and will forward all requests from http://localhost:8081/file/** to http://localhost:8082/file/**
 
-### Compile and run the restful fileservice project
+### Compile and run the fileservice project
 
 * cd fileservice
 * mvn clean install
-* java -jar target/gateway-0.0.1-SNAPSHOT.jar
+* java -jar target/fileservice-0.0.1-SNAPSHOT.jar
 * The service runs on localhost:8082 and has 3 endpoints:
   * POST to "localhost:8082/file/post". Consumes multipart/form-data. Expects 1 form parameter named "file", payload should be a file
   * PUT to "localhost:8082/file/put". Consumes multipart/form-data. Expects 1 form parameter named "file", payload should be a file
